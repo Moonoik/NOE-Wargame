@@ -1,0 +1,26 @@
+#wrapper .admin form {
+  padding: 10%;
+  width: 20em;
+  text-align: center;
+  margin: auto;
+}
+#wrapper .admin form h2 {
+  font-size: 2em;
+}
+#wrapper .admin form input[type='text'],
+#wrapper .admin form input[type='password'],
+#wrapper .admin form button {
+  width: 100%;
+  display: block;
+  font-size: 1.3em;
+  padding: 0.5em;
+  margin: 1em auto;
+}
+#wrapper .admin form button {
+  background-color: #03a9f4;
+  border: 0;
+  margin: 2em auto;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 700;
+}

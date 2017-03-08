@@ -1,0 +1,67 @@
+#wrapper
+	#content
+		#mypage
+			color #FFF
+			h3, h2
+				font-family 'Muli', 'Nanum Barun Gothic', 'Noto Sans Korean', sans-serif
+				font-size 1.5em
+			h2
+				font-size 1.7em
+				text-align right
+			#log
+				min-height 2em
+				max-height 15em
+				overflow-y auto
+				table
+					width 100%
+					color #FFF
+					tr
+						border-bottom 1px solid #FFF
+						&:nth-of-type(1)
+							background-color #2196F3
+							td
+								border-bottom 2px solid #FFF
+								text-align center
+								font-weight 900
+						&:not(:nth-of-type(1))
+							&:hover
+								background-color #757575
+					td
+						font-size 1.2em
+						padding .5em
+						border-bottom 1px solid #FFF
+						text-align center
+						&:nth-of-type(1)
+							width 70%
+						&:nth-of-type(2)
+							width 10%
+						&:nth-of-type(3)
+							width 20%
+						&:not(:first-child)
+							border-left 1px solid #FFF
+			#comment, #password, #nick
+				input[type='text'], input[type='password'], button
+					width 80%
+					font-size 1.5em
+					padding .5em
+					margin .25em
+					display inline-block
+				button
+					width 15%
+					padding .45em
+					border 0
+					background-color #03A9F4
+					color #FFF
+					font-weight 800
+@media (max-width:900px), (max-device-width:900px)
+	#wrapper
+		#content
+			#mypage
+				h3
+					padding 0 1em
+				#comment, #password, #nick
+					padding 0 1em
+					h3
+						padding 0
+					input[type='text'], input[type='password'], button
+						width 100%

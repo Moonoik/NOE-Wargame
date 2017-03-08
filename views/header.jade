@@ -1,0 +1,61 @@
+html
+	head
+		meta(charset='UTF-8')
+		title NOE CTF
+		link(rel='stylesheet', href='/css/header.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+		link(rel='stylesheet', href='/css/font-awesome/css/font-awesome.min.css')
+		script(type='text/javascript', src='https://code.jquery.com/jquery-3.1.1.min.js')
+		script(type='text/javascript', src='//code.jquery.com/ui/1.12.1/jquery-ui.js')
+		script(type='text/javascript', src='/js/header.js')
+		block scripts
+	body
+		section#wrapper
+			div#blur
+			nav#headerNav
+				div#mobileHeader
+					i(aria-hidden='true', class='fa fa-bars')
+					span NOE
+					i(aria-hidden='true', class='fa fa-users')
+				div#mobileMenu
+					h3 Menu
+					a(href='/') Home
+					a(href='/Challenge') Challenge
+					a(href='/Rank') Rank
+					a(href='/Mypage') MyPage
+				div#mobileUser
+					h3 User
+					a(href='#login') 로그인
+					a(href='#register') 회원가입
+				div#navHeader
+					a#logo(href='/') noe
+					ul#menu
+						a(href='/') Home
+						a(href='/Challenge') Challenge
+						a(href='/Rank') Rank
+						a(href='/Mypage') MyPage
+					div#sign
+						span
+							a(href='#login') 로그인
+						span
+							a(href='#register') 회원가입
+			div#signup
+				h2 회원가입
+				input(type='text', placeholder='id')
+				input(type='password', placeholder='password')
+				input(type='text', placeholder='nickname')
+				input(type='text', placeholder='comment')
+				input(type='email', placeholder='email')
+				button 회원가입
+				span 비밀번호 찾기
+			div#forgotpass
+				h2 비밀번호 찾기
+				input(type='text', placeholder='id')
+				input(type='email', placeholder='email')
+				button 비밀번호 찾기
+			div#signin
+				h2 로그인
+				input(type='text', placeholder='id')
+				input(type='password', placeholder='password')
+				button 로그인
+			block content

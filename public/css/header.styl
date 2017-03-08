@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Secular+One|Tenali+Ramakrishna|Muli')
+@import url("https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css")
+@import url("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css")
+html, body
+	background-color #222222
+	padding 0 0
+	margin 0 0
+	font-size 16px
+	#wrapper
+		width 100%
+		position relative
+		margin auto
+		#blur
+			width 100%
+			height 100%
+			background-color rgba(66,66,66 ,.7)
+			z-index 1000
+			visibility visible
+			opacity 1
+			display none
+			position fixed
+		#headerNav
+			width 100%
+			background-color #333
+			border-bottom 1px solid #757575
+			position fixed
+			z-index 100
+			top 0
+			#navHeader
+				width 100%
+				max-width 1280px
+				height 3em
+				top 0
+				margin auto
+				#logo
+					font-family 'Secular One', sans-serif
+					display inline-block
+					float left
+					font-size 1.5em
+					line-height 2
+					padding 0 2em
+					text-transform uppercase
+					color #FFF
+					text-decoration none
+					border-left 1px solid #757575
+					border-right 1px solid #757575
+				#menu
+					list-style-type none
+					margin 0
+					padding 0
+					overflow hidden
+					font-family 'Tenali Ramakrishna', sans-serif
+					font-size 1.5em
+					font-weight 700
+					float left
+					a
+						display block
+						color #9E9E9E
+						text-align center
+						padding 0 1em
+						line-height 2.25
+						text-decoration none
+						display inline-block
+						height 100%
+						&:hover
+							background-color #212121
+				#sign
+					float right
+					font-family 'Noto Sans Korean', sans-serif
+					font-size .9em
+					font-weight 700
+					line-height 4.5
+					padding 0 .5em
+					border-right 1px solid #757575
+					height 100%
+					span
+						display inline-block
+						padding 0 .4em
+						a
+							color #FFF
+							text-decoration none
+			#mobileHeader, #mobileMenu, #mobileUser
+				display none
+		#signup, #forgotpass, #signin
+			position absolute
+			width 90%
+			max-width 600px
+			height 26em
+			background-color #FFF
+			z-index 1000
+			margin 5% auto
+			left 0
+			right 0
+			text-align center
+			display none
+			font-family 'Muli', 'Noto Sans Korean', sans-serif
+			h2
+				font-size 1.5em
+				font-weight 800
+			input[type='text'], input[type='password'], input[type='email'], button
+				width 90%
+				margin .5em auto
+				font-size 1.1em
+				padding .25em .5em
+				font-family 'Nanum Barun Gothic', 'Muli', 'Noto Sans Korean', sans-serif
+			button
+				background-color #03A9F4
+				padding .6em
+				font-size 1.25em
+				font-weight 800
+				border 0
+				color #FFF
+			span
+				te     xt-decoration underline
+				color #FFF
+				position absolute
+				top 100%
+				left 0
+				width 100%
+				font-size 1em
+				cursor default
+		#forgotpass, #signin
+			height 16.5em
+		#content
+			position relative
+			max-width 1280px
+			width 100%
+			margin auto
+			top 5em
+			.red
+				background-color #E91E63 !important
+			.orange
+				background-color #FF9800 !important
+			.blue
+				background-color #03A9F4 !important
+			.green
+				background-color #009688 !important
+			.purple
+				background-color #9C27B0 !important
+@media (max-width:900px), (max-device-width:900px)
+	#wrapper
+		#headerNav
+			#navHeader
+				display none
+			#mobileHeader
+				display block !important
+				width 100%
+				color #FFF
+				font-size 1.75em
+				i
+					display inline-block
+					padding .5em
+					z-index 10
+					&:nth-of-type(1)
+						float left
+					&:nth-of-type(2)
+						float right
+				span
+					z-index -1
+					display inline-block
+					text-align center
+					text-decoration none
+					color #FFF
+					position absolute
+					left 0
+					right 0
+					margin auto
+					line-height 2
+					font-family 'Secular One', sans-serif
+					font-weight 900
+					cursor default
+			#mobileMenu, #mobileUser
+				width 12em
+				height 100%
+				position fixed
+				z-index 1000
+				top calc(3.5em + 1px)
+				color #FFF
+				background-color #03a9f4
+				h3
+					font-size 1.9em
+					color #afdefa
+					margin 0
+					padding .25em
+					font-weight 300
+				a
+					width calc(100% - 2em)
+					font-size 1.1em
+					font-weight 300
+					position relative
+					float left
+					border-bottom 1px solid #258ecd
+					padding 1em
+					text-decoration none
+					color #FFF
+					&:hover
+						background #258ecd
+			#mobileUser
+				text-align right
+				right 0
+				a
+					text-align right
+			#signup, #forgotpass, #signin
+				margin 7.5% auto
+@media (max-device-width: 320px), (max-device-width: 360px), (max-device-width: 420px)
+	html, body
+		#wrapper
+			font-size 38px !important
+			#notice	
+				font-size 1em
+			table
+				font-size 1em
+				tr
+					font-size 1.1em
+			#content
+				#info
+					font-size 1.25em
+				#probTable
+					table
+						font-size 1.1em
+				#category
+					width 100%
+				#allContent
+					line-height 1.5
+					font-size .9em
+				#rank
+					table
+						font-size .8em
+						td
+							white-space nowrap
+			#signin, #signup, #forgotpass
+				margin 15% 5%
+				width 95%
+				max-width 1000px
+				height 18em
+				input[type='text'], input[type='password'], input[type='email'], button
+					padding .5em
+					font-size 1.25em
+					border 1px solid #222
+				button
+					border 0
+					font-weight 700
+				h2
+					font-size 1.8em
+				span
+					font-size 1.3em
+			#signup
+				height 30em

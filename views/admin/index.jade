@@ -1,0 +1,10 @@
+extends header
+block scripts
+	link(rel='stylesheet', href='/css/admin/admin.css')
+block content
+	div.admin
+		form(method='POST', action='Login')
+			h2 관리자 인증
+			input(type='text', placeholder='ID')
+			input(type='text', placeholder='PW')
+			button 로그인

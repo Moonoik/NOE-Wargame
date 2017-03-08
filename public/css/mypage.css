@@ -1,0 +1,104 @@
+#wrapper #content #mypage {
+  color: #fff;
+}
+#wrapper #content #mypage h3,
+#wrapper #content #mypage h2 {
+  font-family: 'Muli', 'Nanum Barun Gothic', 'Noto Sans Korean', sans-serif;
+  font-size: 1.5em;
+}
+#wrapper #content #mypage h2 {
+  font-size: 1.7em;
+  text-align: right;
+}
+#wrapper #content #mypage #log {
+  min-height: 2em;
+  max-height: 15em;
+  overflow-y: auto;
+}
+#wrapper #content #mypage #log table {
+  width: 100%;
+  color: #fff;
+}
+#wrapper #content #mypage #log table tr {
+  border-bottom: 1px solid #fff;
+}
+#wrapper #content #mypage #log table tr:nth-of-type(1) {
+  background-color: #2196f3;
+}
+#wrapper #content #mypage #log table tr:nth-of-type(1) td {
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  font-weight: 900;
+}
+#wrapper #content #mypage #log table tr:not(:nth-of-type(1)):hover {
+  background-color: #757575;
+}
+#wrapper #content #mypage #log table td {
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+#wrapper #content #mypage #log table td:nth-of-type(1) {
+  width: 70%;
+}
+#wrapper #content #mypage #log table td:nth-of-type(2) {
+  width: 10%;
+}
+#wrapper #content #mypage #log table td:nth-of-type(3) {
+  width: 20%;
+}
+#wrapper #content #mypage #log table td:not(:first-child) {
+  border-left: 1px solid #fff;
+}
+#wrapper #content #mypage #comment input[type='text'],
+#wrapper #content #mypage #password input[type='text'],
+#wrapper #content #mypage #nick input[type='text'],
+#wrapper #content #mypage #comment input[type='password'],
+#wrapper #content #mypage #password input[type='password'],
+#wrapper #content #mypage #nick input[type='password'],
+#wrapper #content #mypage #comment button,
+#wrapper #content #mypage #password button,
+#wrapper #content #mypage #nick button {
+  width: 80%;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin: 0.25em;
+  display: inline-block;
+}
+#wrapper #content #mypage #comment button,
+#wrapper #content #mypage #password button,
+#wrapper #content #mypage #nick button {
+  width: 15%;
+  padding: 0.45em;
+  border: 0;
+  background-color: #03a9f4;
+  color: #fff;
+  font-weight: 800;
+}
+@media (max-width: 900px), (max-device-width: 900px) {
+  #wrapper #content #mypage h3 {
+    padding: 0 1em;
+  }
+  #wrapper #content #mypage #comment,
+  #wrapper #content #mypage #password,
+  #wrapper #content #mypage #nick {
+    padding: 0 1em;
+  }
+  #wrapper #content #mypage #comment h3,
+  #wrapper #content #mypage #password h3,
+  #wrapper #content #mypage #nick h3 {
+    padding: 0;
+  }
+  #wrapper #content #mypage #comment input[type='text'],
+  #wrapper #content #mypage #password input[type='text'],
+  #wrapper #content #mypage #nick input[type='text'],
+  #wrapper #content #mypage #comment input[type='password'],
+  #wrapper #content #mypage #password input[type='password'],
+  #wrapper #content #mypage #nick input[type='password'],
+  #wrapper #content #mypage #comment button,
+  #wrapper #content #mypage #password button,
+  #wrapper #content #mypage #nick button {
+    width: 100%;
+  }
+}

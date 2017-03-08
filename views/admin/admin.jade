@@ -1,0 +1,132 @@
+extends header
+block scripts
+	link(rel='stylesheet', href='/css/admin/management.css')
+block content
+	div#Management
+		section.challList
+			h2 분야 리스트
+			table.top(class='chall')
+				tr
+					th 선택
+					th 분야명
+			div.prob(class='scroll')
+				table
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+			button 수정
+			button 삭제
+		section.probList
+			h2 문제 리스트
+			table.top
+				tr
+					th 선택
+					th 문제명
+					th 점수
+			div.prob(class='scroll')
+				table
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+						td 50
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+						td 100
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+						td 50
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+						td 100
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+						td 50
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+						td 100
+					tr
+						td
+							input(type='radio', value='asdf')
+						td GetFlag
+						td 50
+					tr
+						td
+							input(type='radio', value='asdf')
+						td BabyPwn
+						td 100
+			button 수정
+			button 삭제
+		section.challInsert
+			h2 분야 추가
+			form(method='POST', action='Chall')
+				input(type='text', placeholder='분야명')
+				button 분야 추가
+		section.probInsert
+			h2 문제 추가
+			form(method='POST', action='Prob')
+				input(type='text', placeholder='문제명')
+				select(name='chall')
+					option(value='Reversing' selected) 리버싱
+				textarea(placeholder='문제 내용')
+				input(type='text', placeholder='점수')
+				button 문제 추가
+		section.alertInsert
+			h2 알림 추가
+			form(method='POST', action='Alert')
+				input(type='text', placeholder='알림')
+				button 알림 추가
+		section.userSearch
+			h2 유저 정보 검색
+			div.userInfo
+				p ID: antiweb
+				p NAME: 홍길동
+				p EMAIL: admin@antiweb.kr
+				p SCORE: 300
+				p IP: 123.123.123
+				p LAST-AUTH: 2017-03-03 12:12:12.121
+			form(method='POST', action='Search')
+				input(type='text', placeholder='유저 정보')
+				button 정보 검색
+		section.logout
+			h2 로그아웃
+			button 로그아웃

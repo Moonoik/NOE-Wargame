@@ -1,0 +1,37 @@
+#wrapper #content #paragraph {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+}
+#wrapper #content #paragraph #category {
+  width: 10em;
+  height: 2em;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 2;
+}
+#wrapper #content #paragraph #category span {
+  color: #fff;
+}
+#wrapper #content #paragraph #allContent {
+  font-size: 1.1em;
+  color: #fff;
+  padding: 0.5em;
+  font-family: 'Noto Sans Korean', sans-serif;
+  font-weight: 300;
+}
+#wrapper #content #paragraph #allContent p {
+  word-break: keep-all;
+  margin: 0;
+  line-height: 2;
+}
+@media (max-width: 900px), (max-device-width: 900px) {
+  #wrapper #content #paragraph {
+    padding: 1.5em;
+    width: 85%;
+    margin: auto;
+  }
+}

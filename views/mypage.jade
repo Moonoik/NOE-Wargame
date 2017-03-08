@@ -1,0 +1,47 @@
+extends header
+block scripts
+	link(rel='stylesheet', href='/css/mypage.css')
+	link(rel='stylesheet', href='/css/scroll.css')
+block content
+	section#content
+		div#mypage
+			h3 Antiweb님 인증 로그
+			div#log
+				table
+					tr
+						td 문제명
+						td 점수
+						td 인증시간
+					tr
+						td Get Flag
+						td 50
+						td 2017-03-03 12:34:56.789
+					tr
+						td BabyPwn
+						td 50
+						td 2017-03-03 12:34:56.789
+					tr
+						td BabyMISC
+						td 50
+						td 2017-03-03 12:34:56.789
+					tr
+						td BabyMISC
+						td 50
+						td 2017-03-03 12:34:56.789
+					tr
+						td BabyMISC
+						td 50
+						td 2017-03-03 12:34:56.789
+			h2 Total Score: 500
+			div#nick
+				h3 닉네임 변경
+				input(type='text', placeholder='nick')
+				button.red 변경
+			div#comment
+				h3 한줄소개 변경
+				input(type='text', placeholder='comment')
+				button.orange 변경
+			div#password
+				h3 비밀번호 변경
+				input(type='password', placeholder='password')
+				button.blue 변경

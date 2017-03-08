@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css?family=Secular+One|Tenali+Ramakrishna|Muli");
+@import url("https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css");
+@import url("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css");
+html,
+body {
+  background-color: #222;
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 16px;
+}
+html #wrapper,
+body #wrapper {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+html #wrapper #blur,
+body #wrapper #blur {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66,66,66,0.7);
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  display: none;
+  position: fixed;
+}
+html #wrapper #headerNav,
+body #wrapper #headerNav {
+  width: 100%;
+  background-color: #333;
+  border-bottom: 1px solid #757575;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+html #wrapper #headerNav #navHeader,
+body #wrapper #headerNav #navHeader {
+  width: 100%;
+  max-width: 1280px;
+  height: 3em;
+  top: 0;
+  margin: auto;
+}
+html #wrapper #headerNav #navHeader #logo,
+body #wrapper #headerNav #navHeader #logo {
+  font-family: 'Secular One', sans-serif;
+  display: inline-block;
+  float: left;
+  font-size: 1.5em;
+  line-height: 2;
+  padding: 0 2em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-left: 1px solid #757575;
+  border-right: 1px solid #757575;
+}
+html #wrapper #headerNav #navHeader #menu,
+body #wrapper #headerNav #navHeader #menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  float: left;
+}
+html #wrapper #headerNav #navHeader #menu a,
+body #wrapper #headerNav #navHeader #menu a {
+  display: block;
+  color: #9e9e9e;
+  text-align: center;
+  padding: 0 1em;
+  line-height: 2.25;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+}
+html #wrapper #headerNav #navHeader #menu a:hover,
+body #wrapper #headerNav #navHeader #menu a:hover {
+  background-color: #212121;
+}
+html #wrapper #headerNav #navHeader #sign,
+body #wrapper #headerNav #navHeader #sign {
+  float: right;
+  font-family: 'Noto Sans Korean', sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 4.5;
+  padding: 0 0.5em;
+  border-right: 1px solid #757575;
+  height: 100%;
+}
+html #wrapper #headerNav #navHeader #sign span,
+body #wrapper #headerNav #navHeader #sign span {
+  display: inline-block;
+  padding: 0 0.4em;
+}
+html #wrapper #headerNav #navHeader #sign span a,
+body #wrapper #headerNav #navHeader #sign span a {
+  color: #fff;
+  text-decoration: none;
+}
+html #wrapper #headerNav #mobileHeader,
+body #wrapper #headerNav #mobileHeader,
+html #wrapper #headerNav #mobileMenu,
+body #wrapper #headerNav #mobileMenu,
+html #wrapper #headerNav #mobileUser,
+body #wrapper #headerNav #mobileUser {
+  display: none;
+}
+html #wrapper #signup,
+body #wrapper #signup,
+html #wrapper #forgotpass,
+body #wrapper #forgotpass,
+html #wrapper #signin,
+body #wrapper #signin {
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  height: 26em;
+  background-color: #fff;
+  z-index: 1000;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: none;
+  font-family: 'Muli', 'Noto Sans Korean', sans-serif;
+}
+html #wrapper #signup h2,
+body #wrapper #signup h2,
+html #wrapper #forgotpass h2,
+body #wrapper #forgotpass h2,
+html #wrapper #signin h2,
+body #wrapper #signin h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+html #wrapper #signup input[type='text'],
+body #wrapper #signup input[type='text'],
+html #wrapper #forgotpass input[type='text'],
+body #wrapper #forgotpass input[type='text'],
+html #wrapper #signin input[type='text'],
+body #wrapper #signin input[type='text'],
+html #wrapper #signup input[type='password'],
+body #wrapper #signup input[type='password'],
+html #wrapper #forgotpass input[type='password'],
+body #wrapper #forgotpass input[type='password'],
+html #wrapper #signin input[type='password'],
+body #wrapper #signin input[type='password'],
+html #wrapper #signup input[type='email'],
+body #wrapper #signup input[type='email'],
+html #wrapper #forgotpass input[type='email'],
+body #wrapper #forgotpass input[type='email'],
+html #wrapper #signin input[type='email'],
+body #wrapper #signin input[type='email'],
+html #wrapper #signup button,
+body #wrapper #signup button,
+html #wrapper #forgotpass button,
+body #wrapper #forgotpass button,
+html #wrapper #signin button,
+body #wrapper #signin button {
+  width: 90%;
+  margin: 0.5em auto;
+  font-size: 1.1em;
+  padding: 0.25em 0.5em;
+  font-family: 'Nanum Barun Gothic', 'Muli', 'Noto Sans Korean', sans-serif;
+}
+html #wrapper #signup button,
+body #wrapper #signup button,
+html #wrapper #forgotpass button,
+body #wrapper #forgotpass button,
+html #wrapper #signin button,
+body #wrapper #signin button {
+  background-color: #03a9f4;
+  padding: 0.6em;
+  font-size: 1.25em;
+  font-weight: 800;
+  border: 0;
+  color: #fff;
+}
+html #wrapper #signup span,
+body #wrapper #signup span,
+html #wrapper #forgotpass span,
+body #wrapper #forgotpass span,
+html #wrapper #signin span,
+body #wrapper #signin span {
+  te: xt-decoration underline;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 1em;
+  cursor: default;
+}
+html #wrapper #forgotpass,
+body #wrapper #forgotpass,
+html #wrapper #signin,
+body #wrapper #signin {
+  height: 16.5em;
+}
+html #wrapper #content,
+body #wrapper #content {
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  top: 5em;
+}
+html #wrapper #content .red,
+body #wrapper #content .red {
+  background-color: #e91e63 !important;
+}
+html #wrapper #content .orange,
+body #wrapper #content .orange {
+  background-color: #ff9800 !important;
+}
+html #wrapper #content .blue,
+body #wrapper #content .blue {
+  background-color: #03a9f4 !important;
+}
+html #wrapper #content .green,
+body #wrapper #content .green {
+  background-color: #009688 !important;
+}
+html #wrapper #content .purple,
+body #wrapper #content .purple {
+  background-color: #9c27b0 !important;
+}
+@media (max-width: 900px), (max-device-width: 900px) {
+  #wrapper #headerNav #navHeader {
+    display: none;
+  }
+  #wrapper #headerNav #mobileHeader {
+    display: block !important;
+    width: 100%;
+    color: #fff;
+    font-size: 1.75em;
+  }
+  #wrapper #headerNav #mobileHeader i {
+    display: inline-block;
+    padding: 0.5em;
+    z-index: 10;
+  }
+  #wrapper #headerNav #mobileHeader i:nth-of-type(1) {
+    float: left;
+  }
+  #wrapper #headerNav #mobileHeader i:nth-of-type(2) {
+    float: right;
+  }
+  #wrapper #headerNav #mobileHeader span {
+    z-index: -1;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 2;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 900;
+    cursor: default;
+  }
+  #wrapper #headerNav #mobileMenu,
+  #wrapper #headerNav #mobileUser {
+    width: 12em;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: calc(3.5em + 1px);
+    color: #fff;
+    background-color: #03a9f4;
+  }
+  #wrapper #headerNav #mobileMenu h3,
+  #wrapper #headerNav #mobileUser h3 {
+    font-size: 1.9em;
+    color: #afdefa;
+    margin: 0;
+    padding: 0.25em;
+    font-weight: 300;
+  }
+  #wrapper #headerNav #mobileMenu a,
+  #wrapper #headerNav #mobileUser a {
+    width: calc(100% - 2em);
+    font-size: 1.1em;
+    font-weight: 300;
+    position: relative;
+    float: left;
+    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+  }
+  #wrapper #headerNav #mobileMenu a:hover,
+  #wrapper #headerNav #mobileUser a:hover {
+    background: #258ecd;
+  }
+  #wrapper #headerNav #mobileUser {
+    text-align: right;
+    right: 0;
+  }
+  #wrapper #headerNav #mobileUser a {
+    text-align: right;
+  }
+  #wrapper #headerNav #signup,
+  #wrapper #headerNav #forgotpass,
+  #wrapper #headerNav #signin {
+    margin: 7.5% auto;
+  }
+}
+@media (max-device-width: 320px), (max-device-width: 360px), (max-device-width: 420px) {
+  html #wrapper,
+  body #wrapper {
+    font-size: 38px !important;
+  }
+  html #wrapper #notice,
+  body #wrapper #notice {
+    font-size: 1em;
+  }
+  html #wrapper table,
+  body #wrapper table {
+    font-size: 1em;
+  }
+  html #wrapper table tr,
+  body #wrapper table tr {
+    font-size: 1.1em;
+  }
+  html #wrapper #content #info,
+  body #wrapper #content #info {
+    font-size: 1.25em;
+  }
+  html #wrapper #content #probTable table,
+  body #wrapper #content #probTable table {
+    font-size: 1.1em;
+  }
+  html #wrapper #content #category,
+  body #wrapper #content #category {
+    width: 100%;
+  }
+  html #wrapper #content #allContent,
+  body #wrapper #content #allContent {
+    line-height: 1.5;
+    font-size: 0.9em;
+  }
+  html #wrapper #content #rank table,
+  body #wrapper #content #rank table {
+    font-size: 0.8em;
+  }
+  html #wrapper #content #rank table td,
+  body #wrapper #content #rank table td {
+    white-space: nowrap;
+  }
+  html #wrapper #signin,
+  body #wrapper #signin,
+  html #wrapper #signup,
+  body #wrapper #signup,
+  html #wrapper #forgotpass,
+  body #wrapper #forgotpass {
+    margin: 15% 5%;
+    width: 95%;
+    max-width: 1000px;
+    height: 18em;
+  }
+  html #wrapper #signin input[type='text'],
+  body #wrapper #signin input[type='text'],
+  html #wrapper #signup input[type='text'],
+  body #wrapper #signup input[type='text'],
+  html #wrapper #forgotpass input[type='text'],
+  body #wrapper #forgotpass input[type='text'],
+  html #wrapper #signin input[type='password'],
+  body #wrapper #signin input[type='password'],
+  html #wrapper #signup input[type='password'],
+  body #wrapper #signup input[type='password'],
+  html #wrapper #forgotpass input[type='password'],
+  body #wrapper #forgotpass input[type='password'],
+  html #wrapper #signin input[type='email'],
+  body #wrapper #signin input[type='email'],
+  html #wrapper #signup input[type='email'],
+  body #wrapper #signup input[type='email'],
+  html #wrapper #forgotpass input[type='email'],
+  body #wrapper #forgotpass input[type='email'],
+  html #wrapper #signin button,
+  body #wrapper #signin button,
+  html #wrapper #signup button,
+  body #wrapper #signup button,
+  html #wrapper #forgotpass button,
+  body #wrapper #forgotpass button {
+    padding: 0.5em;
+    font-size: 1.25em;
+    border: 1px solid #222;
+  }
+  html #wrapper #signin button,
+  body #wrapper #signin button,
+  html #wrapper #signup button,
+  body #wrapper #signup button,
+  html #wrapper #forgotpass button,
+  body #wrapper #forgotpass button {
+    border: 0;
+    font-weight: 700;
+  }
+  html #wrapper #signin h2,
+  body #wrapper #signin h2,
+  html #wrapper #signup h2,
+  body #wrapper #signup h2,
+  html #wrapper #forgotpass h2,
+  body #wrapper #forgotpass h2 {
+    font-size: 1.8em;
+  }
+  html #wrapper #signin span,
+  body #wrapper #signin span,
+  html #wrapper #signup span,
+  body #wrapper #signup span,
+  html #wrapper #forgotpass span,
+  body #wrapper #forgotpass span {
+    font-size: 1.3em;
+  }
+  html #wrapper #signup,
+  body #wrapper #signup {
+    height: 30em;
+  }
+}

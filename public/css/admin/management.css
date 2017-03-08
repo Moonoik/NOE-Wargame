@@ -1,0 +1,168 @@
+#wrapper #Management {
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+}
+#wrapper #Management section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#wrapper #Management section h2 {
+  font-size: 1.8em;
+  margin: 0;
+  line-height: 2.5;
+  text-align: left;
+}
+#wrapper #Management section .top,
+#wrapper #Management section .prob table {
+  color: #fff;
+  font-size: 1.25em;
+  border-collapse: collapse;
+}
+#wrapper #Management section .top th,
+#wrapper #Management section .prob table th,
+#wrapper #Management section .top td,
+#wrapper #Management section .prob table td {
+  padding: 0.25em;
+  border-bottom: 1px solid #fff;
+}
+#wrapper #Management section .top th:nth-child(1):nth-last-child(2):first-child,
+#wrapper #Management section .prob table th:nth-child(1):nth-last-child(2):first-child,
+#wrapper #Management section .top td:nth-child(1):nth-last-child(2):first-child,
+#wrapper #Management section .prob table td:nth-child(1):nth-last-child(2):first-child {
+  width: 10%;
+}
+#wrapper #Management section .top th:nth-child(1):nth-last-child(2):last-child,
+#wrapper #Management section .prob table th:nth-child(1):nth-last-child(2):last-child,
+#wrapper #Management section .top td:nth-child(1):nth-last-child(2):last-child,
+#wrapper #Management section .prob table td:nth-child(1):nth-last-child(2):last-child {
+  width: 90%;
+}
+#wrapper #Management section .top th:nth-child(1):nth-last-child(2):first-child,
+#wrapper #Management section .prob table th:nth-child(1):nth-last-child(2):first-child,
+#wrapper #Management section .top td:nth-child(1):nth-last-child(2):first-child,
+#wrapper #Management section .prob table td:nth-child(1):nth-last-child(2):first-child {
+  width: 10%;
+}
+#wrapper #Management section .top th:nth-child(1):nth-last-child(2):nth-of-type(2),
+#wrapper #Management section .prob table th:nth-child(1):nth-last-child(2):nth-of-type(2),
+#wrapper #Management section .top td:nth-child(1):nth-last-child(2):nth-of-type(2),
+#wrapper #Management section .prob table td:nth-child(1):nth-last-child(2):nth-of-type(2) {
+  width: 70%;
+}
+#wrapper #Management section .top th:nth-child(1):nth-last-child(2):last-child,
+#wrapper #Management section .prob table th:nth-child(1):nth-last-child(2):last-child,
+#wrapper #Management section .top td:nth-child(1):nth-last-child(2):last-child,
+#wrapper #Management section .prob table td:nth-child(1):nth-last-child(2):last-child {
+  width: 20%;
+}
+#wrapper #Management section .top {
+  width: 80%;
+  margin: auto;
+}
+#wrapper #Management section .top tr:first-child {
+  background-color: #e91e63;
+}
+#wrapper #Management section .prob {
+  width: 80%;
+  height: 15em;
+  overflow-y: auto;
+  margin: auto;
+}
+#wrapper #Management section .prob table {
+  width: 100%;
+}
+#wrapper #Management section .prob table td {
+  font-size: 1.1em;
+  text-align: center;
+}
+#wrapper #Management section button {
+  width: 40%;
+  margin: auto;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-weight: 700;
+  border: 0;
+  background-color: #e91e63;
+  color: #fff;
+}
+#wrapper #Management .challInsert,
+#wrapper #Management .probInsert,
+#wrapper #Management .userSearch,
+#wrapper #Management .alertInsert,
+#wrapper #Management .logout {
+  height: auto;
+}
+#wrapper #Management .challInsert form,
+#wrapper #Management .probInsert form,
+#wrapper #Management .userSearch form,
+#wrapper #Management .alertInsert form,
+#wrapper #Management .logout form {
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+}
+#wrapper #Management .challInsert input[type='text'],
+#wrapper #Management .probInsert input[type='text'],
+#wrapper #Management .userSearch input[type='text'],
+#wrapper #Management .alertInsert input[type='text'],
+#wrapper #Management .logout input[type='text'],
+#wrapper #Management .challInsert input[type='password'],
+#wrapper #Management .probInsert input[type='password'],
+#wrapper #Management .userSearch input[type='password'],
+#wrapper #Management .alertInsert input[type='password'],
+#wrapper #Management .logout input[type='password'],
+#wrapper #Management .challInsert select,
+#wrapper #Management .probInsert select,
+#wrapper #Management .userSearch select,
+#wrapper #Management .alertInsert select,
+#wrapper #Management .logout select,
+#wrapper #Management .challInsert textarea,
+#wrapper #Management .probInsert textarea,
+#wrapper #Management .userSearch textarea,
+#wrapper #Management .alertInsert textarea,
+#wrapper #Management .logout textarea,
+#wrapper #Management .challInsert button,
+#wrapper #Management .probInsert button,
+#wrapper #Management .userSearch button,
+#wrapper #Management .alertInsert button,
+#wrapper #Management .logout button {
+  width: 100%;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Noto Sans Korean', sans-serif;
+}
+#wrapper #Management .challInsert button,
+#wrapper #Management .probInsert button,
+#wrapper #Management .userSearch button,
+#wrapper #Management .alertInsert button,
+#wrapper #Management .logout button {
+  width: 80%;
+  border: 0;
+  font-size: 1.5em;
+  background-color: #e91e63;
+  color: #fff;
+}
+#wrapper #Management .challInsert select,
+#wrapper #Management .probInsert select,
+#wrapper #Management .userSearch select,
+#wrapper #Management .alertInsert select,
+#wrapper #Management .logout select {
+  text-align-last: center;
+}
+#wrapper #Management .userSearch .userInfo {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+#wrapper #Management .userSearch .userInfo p {
+  margin: 0;
+  line-height: 1.75;
+  font-weight: 700;
+  font-size: 1.2em;
+}
